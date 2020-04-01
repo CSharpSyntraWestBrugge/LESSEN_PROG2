@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Honger spel</title>
+    <style>
+        #bakje-met-eten {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            width: 200px;
+            height: 40px;
+            background-color: green;
+        }
+       
+        #ik-heb-honger {
+            position: absolute;
+            top: 405px;
+            left: 405px;
+            width: 200px;
+            height: 40px;
+            background-color: gray;
+        }
+       
+        #ik-heb-honger:hover ~#bakje-met-eten {
+        transition: all 10s ease;
+        transform: translate(400px, 400px);          
+        }
+    </style>
+</head>
+<body>
+    <div id="ik-heb-honger">
+        ik heb honger
+    </div>
+    <div id="bakje-met-eten">
+        lekker eten
+    </div>
+</body>
+</html>
